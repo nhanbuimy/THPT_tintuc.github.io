@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgray;
+}
+.first.flex {
+    height: 50%;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: wheat;
+    font-size: 2rem;
+    border-radius: 7px;
+    background: radial-gradient(lightblue,blue,lightskyblue);
+    padding: 10px;
+   
+}
+.left > h1 {
+     animation: doivitri 3s ease infinite;
+}
+@keyframes doivitri {
+    0% { margin: 30px 25px;}
+    25% { margin: 60px 45px;}
+    50% { margin: 50px 65px;}
+    100% { margin: 80px 85px;}
+}
+a {
+    text-decoration: none;
+    color: #1E90FF;
+}
+.lienhe {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.lienhe > li > b {
+    color: blue;
+} 
+.con.lienhe > li {
+    text-indent: 10px; /*thục lề thẻ li con*/
+}
+
+.right {
+    margin-top: 80px;
+}
+.form {
+    color: chocolate;   
+}
+h2 {
+    color: darkblue;
+}
+/*#images {
+   position: absolute;
+    width: 100%;
+    z-index: -2; /*nằm chồng lên ảnh
+}*/
+div.follow a {
+    color: #1d559f;
+}

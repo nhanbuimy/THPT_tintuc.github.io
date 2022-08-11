@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+}
+
+nav.flex {
+    background-color: darkblue
+}
+
+
+nav {
+    justify-content: space-between;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.thunhat > li {
+    border-left: 1px solid wheat;
+}
+
+ul.menu > li > a {
+    padding: 1.5rem 2rem;
+    display: block;
+    text-decoration: none;
+    color: white
+    
+}
+
+ul.menu > li > a:hover {
+    color: blue;
+    background-color: lightblue;
+}
+
+.title {
+    margin-top: 10px;
+    justify-content: space-between;
+    background:linear-gradient(lightblue,blue, lightblue);
+}
+div > h1 {
+    color: white;
+    text-shadow: 4px 3px 2px lightcoral;
+}
