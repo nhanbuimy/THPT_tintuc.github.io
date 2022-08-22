@@ -4,242 +4,369 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trường THPT Dương Bạch Mai</title>
-    <link rel="stylesheet" href="CSS/THPT.css"/>
-    <link href="anh/ou.png" rel="shortcut icon" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <title>Tin tức & Sự kiên - Trường THPT Dương Bạch Mai</title>
+    <link rel="stylesheet" href="CSS/THPT_New.css"/>
+    <link href="Pictures/logo.jpeg" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="JS/jquery-3.6.0.min.js"></script>-->
+    <script src="JS/THPT.js"></script>
 </head>
 
 <body>
-    
+    <div class="toTop">
+        <div><i class="fa fa-arrow-circle-up"></i></div>
+    </div>
     <header>
         <div class="container">
-            <div class="logo"><img src="anh/thptbachmai.jpg"/></div>
+            <div class="logo"><img src="Pictures/logo.jpeg"/></div>
             <div class="tieude"><h1>TRƯỜNG TRUNG HỌC PHỔ THÔNG DƯƠNG BẠCH MAI</h1></div> 
-            <div class="hinh"><img src="vidu/logotruong.jpg"/></div>
+            <div class="hinh"><img src="Pictures/hinh.jpeg"/></div>
         </div>
     </header>
+
     <nav>
         <ul class="menu">
-            <li><a href="#" title="Trang chủ">
-                <i class="fa fa-home"></i>
-                <span>TRANG CHỦ</span>
+            <li><a href="#">
+                    <i class="fa fa-home"></i>
+                    <span>TRANG CHỦ</span>
                 </a>
              </li>
 
              <li class="sub">
-                <a href="#gioithieu" title="Giới thiệu">
+                <a href="#gioithieu">
                     <i class="fa fa-mortar-board"></i>
                     <span>GIỚI THIỆU</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#">Ban giám hiệu</a></li>
-                    <li><a href="#">Lịch sử về trường</a></li>
-                    <li><a href="#">Cán bộ nhân viên</a></li>
+                    <li><a href="#">Giới thiệu chung</a></li>
+                    <li><a href="#">Cơ sở vật chất</a></li>
+                    <li><a href="#">Đội ngũ giáo viên</a></li>
                 </ul>
              </li>
 
              <li class="sub">
-                <a href="#" title="Tin tức-sự kiện">
+                <a href="#">
                     <i class="fa fa-calendar"></i>
-                <span>TIN TỨC-SỰ KIỆN</span>
+                    <span>TIN TỨC-SỰ KIỆN</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li><a href="#">Kế hoạch năm học</a></li>
-                    <li><a href="#">Tuyển sinh 10</a></li>
-                    <li><a href="#">Cuộc thi</a></li>
-                    <!--<li><a href="#"></a></li>-->
+                    <li><a href="#diemchuandaihoc">Điểm chuẩn đại học</a></li>
+                    <li><a href="#tuyensinhlop10">Tuyển sinh lớp 10</a></li>
+                    <li><a href="#cuocthi-khac">Cuộc thi</a></li>
+                    <li><a href="#cuocthi-khac">Khác</a></li>
                 </ul>
              </li>
             
              <li class="sub">
-                 <a href="#" title="Cuộc sống học đường">
-                    <i class="fa-solid fa-users"></i>
-                <span>CUỘC SỐNG HỌC ĐƯỜNG</span>
+                 <a href="#">
+                    <i class="fa fa-group"></i>
+                <span>HỌC TẬP</span>
                 </a>
                 <ul class="menu subcontent">
-                    <li>
-                        <a href="#">Thời khóa biểu</a>
-                    </li>
+                    <li><a href="#">Thời khóa biểu lớp</a></li>
                     <li><a href="#">Tài liệu học tập</a></li>
-                    <!--<li><a href="#">Thư viện</a></li>
-                    <li><a href="#">Dịch vụ bán trú-xe buýt</a></li>
-                    <li><a href="#">Câu chuyện học đường</a></li>-->
+                    <li><a href="#">Câu chuyện học đường</a></li>
+                    <!--<li><a href="#khac">Khác</a></li>-->
                 </ul>
              </li>
 
-
-             <!--dang nhap la lien he them-->
-
-             <li class="sub">
-                 <a href="#" title="Đăng nhập">
-                <i class="fa-solid fa-user-check"></i>
+             <li><a href="#">
+                <i class="fa fa-phone"></i>
                 <span>LIÊN HỆ</span>
                 </a>
              </li>
 
-             <li>
-                <div>
-                    <input type="text" placeholder="Search"/>
-                    <button>
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
+             <li><a href="#">
+                <i class="fa fa-user-circle-o"></i>
+                <span>ĐĂNG NHẬP</span>
+                </a>
              </li>
         </ul>
-    </nav>
+</nav>
+
+
 <article>
     <div class="act">
         <marquee direction="left"><h1>Chào mừng đến với trang thông tin điện tử trường THPT Dương Bạch Mai</h1></marquee>
     </div> 
-    <div id="time" class="Time">
-        <script>
-             var today=new Date();
-             var date=today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
-             document.getElementById("time").innerHTML=date;
-        </script>
-    </div>
+    <div id="time" class="Time"></div>
 </article>
 
+<div class="slideshow">
+    <img id="slide" onmouseover="ChuyenAnh()" src="Pictures/hinh.jpeg">
+</div>
 
-    <div id="slideshow">
-        <div class="slide-wrapper">
-        <div class="slide"><img src="anh/python.jpg"></div>
-        <div class="slide"><img src="anh/java.png"></div>
-        <div class="slide"><img src="anh/c++.png"></div>
+<section class="NEW">
+    <div class="Tintuc-Sukien">
+        <div class="tintuc">
+            <h1>TIN TỨC - SỰ KIỆN</h1>
+        </div>
+
+        <div class="News-Events">
+            <div class="News">
+                <a href="https://vietnamnet.vn/tra-cuu-diem-thi-tot-nghiep-thpt-2022-tren-vietnamnet-2042363.html">
+                    <img src="Pictures/thptqg.webp"/>
+                    <p>Công bố điểm thi THPT Quốc gia 2022</p>
+                    <div class="an">
+                        <span>
+                            Theo quy chế thi tốt nghiệp THPT năm 2022, với môn thi tự luận Ngữ văn, bài thi được chấm theo thang điểm 10, điểm lẻ của tổng điểm toàn bài được làm tròn đến 2 chữ số thập phân. Đối với các môn thi còn lại (môn thi trắc nghiệm) làm tròn đến 2 chữ số thập phân cho từng bài thi và từng môn thi thành phần của bài thi tổ hợp.
+                            Điểm xét tốt nghiệp THPT năm 2022 gồm điểm các bài thi thí sinh dự thi để xét công nhận tốt nghiệp và điểm trung bình cả năm lớp 12 cùng điểm ưu tiên, khuyến khích (nếu có). Điểm của từng bài thi được quy về thang điểm 10 để tính điểm xét tốt nghiệp. Thí sinh được miễn thi bài thi Ngoại ngữ tương đương đạt 10 điểm cho bài thi này để xét công nhận tốt nghiệp THPT. 
+                        </span>
+                    </div>     
+                </a>
+                <div class="xem">
+                    Xem lại những cảm xúc sau kì thi THPT Quốc gia năm nay <a href="https://giaoducthoidai.vn/nhung-cam-xuc-sau-khi-ket-thuc-ky-thi-tot-nghiep-thpt-nam-2022-post600130.html"> tại đây</a>
+                </div>
+                
+                <div class="new">NEW!!!</div>
+            </div>
+
+            <div class="lastestnews">
+              <h1 class="lastest_h1"><i class="fa fa-bullhorn"></i> TIN MỚI <sup class="news">NEW!!</sup></h1>
+            </h1>
+                <ul class="lastest">
+                    <li>
+                        <a href="https://thuvienphapluat.vn/phap-luat/diem-chuan-dai-hoc-nam-2022-se-tang-hay-giam-sau-khi-biet-diem-thi-thpt-2022-can-phai-lam-nhung-gi-27824.html">
+                            <img src="Pictures/bieudo.png"/> 
+                            <p>Điểm chuẩn đại học năm 2022 sẽ tăng hay giảm?</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://thi.tuyensinh247.com/de-thi-thu-tot-nghiep-thpt-e16.html">
+                            <img src="Pictures/dapanchinhthuc.jpg"/>
+                            <p>Đáp án các mã đề thi tốt nghiệp THPT Quốc gia năm 2022</p>        
+                        </a>            
+                    </li>
+
+                    <li>
+                        <a href="https://tuoitre.vn/de-thi-tot-nghiep-thpt-nam-nay-de-hay-kho-20200627084112975.htm">
+                            <img src="Pictures/thingaydau.jpeg"/>
+                            <p>Đề tốt nghiệp năm nay dễ hay khó?</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
         </div>
     </div>
-<section class="con">
-    <section>
-        <div class="gioithieu">
-            <h1>GIỚI THIỆU CHUNG</h1>
-            <p>Ngôi nhà chung Dương Bạch Mai luôn tự hào là nơi mỗi học sinh được học cách cho và nhận yêu thương, nơi mỗi học sinh luôn tự tin tỏa sáng, nơi là bệ phóng để mỗi học sinh xây dựng tương lai thành công. Với triết lý giáo dục hướng đến 5 giá trị cốt lõi: “Tôn trọng, Trách nhiệm, Yêu thương, Hợp tác, Sáng tạo”, nhà trường luôn hướng đến mục tiêu giáo dục: “Đào tạo những học sinh có phẩm chất, kiến thức, kĩ năng ngang tầm học sinh các nước tiên tiến trong khu vực, hòa nhập được với cộng đồng thế giới và trở thành công dân toàn cầu, có thể học tập và làm việc thành công ở Việt Nam cũng như ở các nước trên thế giới.</p>
-        </div>
-    </section>
 
-
-
-    <section class="con second">
-        <h2>đảng bộ trường thpt dương bạch mai</h2>
-        <p>
-            Đảng bộ nhà trường mà tiền thân là Chi bộ Trường THPT Dương Bạch Mai trực thuộc Đảng bộ khối các cơ quan tỉnh Bà Rịa - Vũng Tàu.  Chi bộ được thành lập ngày 28/10/1996, gồm có 09 đảng viên. Tháng 01/2015 chi bộ được nâng cấp thành Đảng bộ gồm 04 chi bộ trực thuộc. 20 năm qua, Đảng bộ đã bồi dưỡng kết nạp được 48 đảng viên, tổng số đảng viên hiện nay của Đảng bộ là 52 người. Trong những năm qua, Đảng bộ luôn giữ vai trò lãnh đạo toàn diện đơn vị, thành tích của nhà trường liên tục được duy trì và nâng cao, Đảng bộ liên tục được công nhận tổ chức TSVM, được Tỉnh ủy tặng Bằng khen.
-        </p>
-        <h2>Ban chấp hành đảng bộ - truyền hình giáo dục</h2>
-        <section class="consecond">
-            <table border="1">
-                <tr>
-                    <td>1 </td>
-                    <td>Đồng chí Lê Văn Thái </td>
-                    <td>Bí thư</td>
-                </tr>
-                <tr>
-                    <td>2 </td>
-                    <td>Đồng chí Phạm Thị Như Trang </td>
-                    <td>Phó Bí thư</td>
-                </tr>
-                <tr>
-                    <td>3 </td>
-                    <td>Đồng chí Phạm Thị Thanh Mai </td>
-                    <td>Ủy viên</td>
-                </tr>
-                <tr>
-                    <td>4 </td>
-                    <td>Đồng chí Nguyễn Công Hoan </td>
-                    <td>Ủy viên</td>
-                </tr>
-                <tr>
-                    <td>5 </td>
-                    <td>Đồng chí Nguyễn Ngọc Thái: </td>
-                    <td>Ủy viên</td>
-                </tr>
-                <tr>
-                    <td>6. </td>
-                    <td>Đồng chí Nguyễn Văn Tư </td>
-                    <td>Ủy viên</td>
-                </tr>
-                <tr>
-                    <td>7 </td>
-                    <td>Đồng chí Lê Quang Nhân </td>
-                    <td>Ủy viên</td>
-                </tr>
-            </table>
-            <iframe width="650" height="320" src="https://www.youtube.com/embed/Bud3Z3ul49U" title="Phan 1.1: Chuyên đề đổi mới giáo dục. THCS Nguyễn Văn Linh - BRVT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <aside class="ads">
-            <div><h3 class="animate__animated animate__flipInX animate__infinite infinite">TIÊN HỌC LỄ</h3></div>
-            <div><h3 class="animate__animated animate__flipInX animate__infinite infinite">HẬU HỌC VĂN</h3></div>
-        </aside>
-
-        <h2>hoạt động đảng</h2>
-        <div class="hdd">
-            <div><img src="anh/daihoidaibieu.jpg" alt="ĐẠI HỘI ĐẠI BIỂU"/></div>
-            <div>
-                <h3>đại hội đại biểu đoàn trường thpt dương bạch mai nhiệm kỳ 2020 - 2021</h3> 
-                <div>Hòa chung không khí sôi nổi của Đoàn viên, thanh niên cả nước thi đua lập thành tích chào mừng Đại hội Đảng các cấp tiến tới Đại hội Đảng toàn quốc lần thứ XIII, được sự đồng ý của Đảng ủy trường THPT Dương Bạch Mai, Ban Thường vụ Đoàn khối, Đoàn Trường THPT Dương Bạch Mai đã tổ chức Đại hội Đại biểu Đoàn Trường nhiệm kỳ 2020 – 2021 và bầu ra Ban Chấp hành Đoàn trường nhiệm kỳ mới để tiếp tục lãnh đạo công tác Đoàn và phong trào thanh niên trong nhà trường...</div>
+<div class="tieude1" id="tuyensinhlop10"><h2>Tuyển sinh vào lớp 10 năm 2022</h2></div>
+    <div class="Thongtin">
+            <div class="thongtin"> 
+                <img src="Pictures/tuyensinh10.jpg"/>
+                <div>
+                    <a href="https://laodong.vn/giao-duc/diem-chuan-lop-10-nam-2022-tinh-ba-ria-vung-tau-1059091.ldo">  
+                        <p>Điểm chuẩn vào lớp 10 tỉnh BR-VT</p>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="hdd">
-            <div><img src="anh/daihoidangbo.jpg" alt="ĐẠI HỘI ĐẢNG BỘ"/></div>
-            <div>
-                <h3>đại hội đảng bộ trường thpt dương bạch mai lần thứ viii, nhiệm kỳ 2020 - 2025</h3>
-                <p>Hòa chung trong không khí thi đua sôi nổi của toàn Đảng, toàn quân và toàn dân cả nước hướng đến chào mừng Đại hội Đảng Cộng sản Việt Nam Lần thứ XIII, hôm nay ngày 22 tháng 6 năm 2020, Đảng bộ trường THPT Dương Bạch Mai long trọng tổ chức Đại hội Đảng bộ Lần thứ VII, Nhiệm kỳ 2020 – 2025...</p>
+
+            <div class="thongtin">
+                <img src="Pictures/tracuu.webp"/>
+                <div>
+                    <a href="http://bariavungtau.edu.vn/SoGDDT/4/1947/7993/Tra-cuu-tuyen-sinh-lop-10/">
+                        <p>Tra cứu điểm thi vào lớp 10 tỉnh BR-VT năm 2022</p>
+                    </a>
+                </div>
+            </div>
+
+        <div class="thongtin">
+                <img src="Pictures/lichthi.jpg"/>
+                <div>
+                    <a href="https://baobariavungtau.com.vn/xa-hoi/202204/tu-ngay-7-96-thi-tuyen-sinh-lop-10-nam-hoc-2022-2023-949040/index.htm">
+                        <p>Lịch thi vào lớp 10 tỉnh BR-VT năm 2022</p>
+                    </a>
+                </div>
             </div>
         </div>
 
+        <div class="tieude1" id="diemchuandaihoc"><h2>Điểm chuẩn các trường đại học năm 2021</h2></div>
+        <div class="Thongtin">
+    
+                <div class="thongtin">
+                    <img src="Pictures/ueh.png"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-kinh-te-tphcm-KSA.html">
+                            <p>Điểm chuẩn trường đại học Kinh Tế TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
+         
+                <div class="thongtin">
+                    <img src="Pictures/ou.jpg"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-mo-tphcm-MBS.html">
+                            <p>Điểm chuẩn trường đại học Mở TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="thongtin">
+                    <img src="Pictures/uit.jpg"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-tphcm-QSC.html">
+                            <p>Điểm chuẩn trường đại học Công Nghệ Thông Tin TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="thongtin">
+                    <img src="Pictures/ussh.jpg"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-khoa-hoc-xa-hoi-va-nhan-van-dai-hoc-quoc-gia-ha-noi-QHX.html">
+                            <p>Điểm chuẩn trường đại học Khoa Học Xã Hội và Nhân Văn TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
 
-
-        <h2>hoạt động đoàn</h2>
-        <div class="hdd">
-            <div><img src="anh/doantruong.jpg" alt="HOẠT ĐỘNG ĐOÀN THỂ"/></div>
-            <div>
-                <h3>đoàn trường thpt dương bạch mai tổ chức chương trình kỷ niệm 91 năm thành lập đoàn tncs hồ chí minh (26/3/1931 - 26/3/2022) và lễ kết nạp đoàn viên - lớp đoàn viên chào mừng Đại hội Đoàn các cấp nhiệm kỳ 2022 - 2027</h3> 
-                <p>Ngày 23/03/2022, Đoàn Trường THPT Dương Bạch Mai đã tổ chức chương trình kỷ niệm 91 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931-26/3/2022) và Lễ kết nạp Đoàn viên – Lớp đoàn viên chào mừng Đại hội Đoàn các cấp nhiệm kỳ 2022 – 2027. Nhằm đảm bảo công tác phòng chống dịch Covid-19, chương trình đã được thực hiện theo hình thức trực tiếp kết...</p>
-            </div>
-        </div>
-        <div class="hdd">
-            <div><img src="anh/ngaydoanvien.jpg" alt="NGÀY ĐOÀN VIÊN"/></div>
-            <div>
-                <h3>đoàn trường thpt dương bạch mai tổ chức hoạt động "ngày đoàn viên" nhân kỷ niệm 90 năm ngày thành lập đoàn tncs hồ chí minh (26/3/1931 - 26/3/2021)</h3>
-                <p>Ngày 20/3/2021, Đoàn Trường THPT Dương Bạch Mai đã tổ chức hoạt động “Ngày Đoàn viên”. Đây là hoạt động trong chuỗi hoạt động Tháng Thanh niên năm 2021 nhằm chào mừng thành công Đại hội Đảng toàn quốc lần thứ XIII và Kỷ niệm 90 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931 – 26/3/2021). Hoạt động “Ngày Đoàn viên” có 3 hoạt động chính...</p>
-            </div>
-        </div>
-        <div class="hdd">
-            <div><img src="anh/tuhaothanhnien.jpg" alt="TỰ HÀO ĐOÀN VIÊN ĐOÀN TNCS HỒ CHÍ MINH"/></div>
-            <div>
-                <h3>đoàn trường thpt dương bạch mai tổ chức hội thi báo tường với chủ đề "tụ hào đoàn viên đoàn tncs hồ chí minh"</h3>
-                <p>Thực hiện chuỗi hoạt động Tháng Thanh niên năm 2021 nhằm chào mừng thành công Đại hội Đảng toàn quốc lần thứ XIII và kỷ niệm 90 năm ngày thành lập Đoàn TNCS Hồ Chí Minh (26/3/1931 – 26/3/2021), Đoàn trường THPT chuyên Nguyễn Du đã tổ chức Hội thi làm báo tường với chủ đề “Tự hào Đoàn viên Đoàn TNCS Hồ Chí Minh”...</p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-
-
-
-
-</section>    
-<footer>
-    <div class="end">
-        <div>TRƯỜNG THPT DƯƠNG BẠCH MAI</div>
+                <div class="thongtin">
+                    <img src="Pictures/ufm.jpg"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-tai-chinh-marketing-DMS.html">
+                            <p>Điểm chuẩn trường đại học Tài Chính-Marketing TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="thongtin">
+                    <img src="Pictures/ute.jpe"/>
+                    <div>
+                        <a href="https://diemthi.tuyensinh247.com/diem-chuan/dai-hoc-su-pham-ky-thuat-tphcm-SPK.html">                
+                            <p>Điểm chuẩn trường đại học Sư Phạm Kỹ Thuật TP.HCM năm 2021</p>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+    
+    <div class="tieude1" id="cuocthi-khac"><h2>Cuộc thi và khác</h2></div>
+        <div class="Thongtin">
         
-        <div>Địa chỉ: Xã Phước Hội, huyện Đất Đỏ, tỉnh Bà Rịa-Vũng Tàu</div>
-        <div>
-           Điện Thoại: 0254 3506381
-        </div>
-        <div>Email: thptduongbachmai@gmail.com</div>
-        <div>Website: thpt-duongbachmai.bariavungtau.edu.vn</div>
+                <div class="thongtin">
+                    <img src="Pictures/khkt6.jpeg"/>
+                    <div>
+                        <a href="http://www.brt.vn/thoi-su/ngay-moi/202101/khai-mac-cuoc-thi-khoa-hoc-ki-thuat-tinh-br-vt-danh-cho-hoc-sinh-trung-hoc-nam-2020-2021-8204290/"
+                            <p>BRVT khai mạc cuộc thi KHKT cho học sinh</p>
+                        </a>
+                    </div>
+                    </div>
+             
+                <div class="thongtin">
+                     <img src="Pictures/hsg.jpg"/>
+                    <div>
+                        <a href="https://baobariavungtau.com.vn/xa-hoi/202203/ba-ria-vung-tau-dat-39-giai-hoc-sinh-gioi-quoc-gia-947128/index.htm">
+                            <p>BRVT đạt 39 giải học sinh giỏi Quốc gia</p>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="thongtin">
+                    <img src="Pictures/computer1.jpg"/>
+                    <div>
+                        <a href="https://www.baobariavungtau.com.vn/xa-hoi/202202/cuoc-thi-hoc-sinh-voi-an-toan-thong-tin-2022-944886/index.htm">
+                            <p>Cuộc thi Học sinh và An toàn thông tin</p>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="thongtin">
+                    <img src="Pictures/giaithethao.jpg"/>
+                    <div>
+                        <a href="http://sovhtt.baria-vungtau.gov.vn/the-duc-the-thao/-/asset_publisher/content/giai-vo-co-truyen-tinh-ba-ria-vung-tau-nam-2021">                
+                            <p>Giải thể thao bộ môn Võ cổ truyền</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thongtin">
+                    <img src="Pictures/traihe.jpeg"/>
+                    <div>
+                        <a href="https://baobariavungtau.com.vn/xa-hoi/201907/khai-mac-trai-he-huyen-dat-do-861425/">
+                            <p>Khai mạc trại hè cho học sinh huyện Đất Đỏ</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thongtin">
+                    <img src="Pictures/mienTrung.jpg"/>
+                    <div>
+                        <a href="https://giaoduc.net.vn/thay-tro-ba-ria-vung-tau-huong-ve-dong-bao-mien-trung-post213112.gd">
+                            <p>Thầy trò huyện Đất Đỏ hướng về miền Trung</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thongtin">
+                    <img src="Pictures/uongnuocnhonguon.jpg"/>
+                    <div>
+                        <a href="http://congdoanbrvt.org.vn/hoat-dong-uong-nuoc-nho-nguon-nho-on-anh-hung-liet-sy/">
+                            <p>BRVT thực hiện chương trình "uống nước nhớ nguồn"</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thongtin">
+                    <img src="Pictures/dgnl.jpg"/>
+                    <div>
+                        <a href="https://hoatieu.vn/hoc-tap/diem-chuan-danh-gia-nang-luc-207592">
+                            <p>Điểm chuẩn ĐGNL các trường đại học TP.HCM</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="thongtin">
+                    <img src="Pictures/tuutruong.jpg"/>
+                    <div>
+                        <a href="https://laodong.vn/chinh-sach-giao-duc/ba-ria-vung-tau-hoc-sinh-cac-cap-se-den-truong-ke-tu-228-1074069.ldo">
+                            <p>Lịch tựu trường của của các trường tỉnh BRVT</p>
+                        </a>
+                    </div>
+                </div>    
+</section>
+
+<footer>
+    <div class="caunoi">
+        <div class="p"> “Non sông Việt Nam có trở nên vẻ vang hay không, dân tộc Việt Nam có được vẻ vang sánh vai các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các cháu” - Hồ Chí Minh</div>
     </div>
+
+    <div class="foot">
+        <div class="foot1">
+            <h2>Trường THPT Dương Bạch Mai</h2>
+            <ul class="menu1">
+                <li><i class="fa fa-map-marker"><span> Địa chỉ: Tỉnh lộ 44, Phước Hội, Đất Đỏ, tỉnh Bà Rịa-Vũng Tàu</span></i></li>
+                <li><i class="fa fa-phone"><span> Số điện thoại: 0254 2477381</span></i></li>
+                <li><a href="mailto: thptduongbachmai@gmail.com?subject=Phản hồi&body=Trân trọng!"><i class="fa fa-envelope-o"><span> Email: thptduongbachmai@gmail.com</span></i></a></li>
+                <li><a href="#"><i class="fa fa-location-arrow"><span> Website: thpt-duongbachmai.bariavungtau.edu.vn</span></i></a></li><!--thay cái này = trang web của mình-->
+            </ul>
+        </div>
+
+        <div class="foot2">
+            <h2> Truy cập nhanh</h2>
+            <ul class="menu1">
+                <li><a href="#"><i class="fa fa-angle-right"><span> Trang Chủ</span></i></a></li>
+                <li><a href="#"><i class="fa fa-angle-right"><span> Giới Thiệu</span> </i></a></li>
+                <li><a href="#"><i class="fa fa-angle-right"><span> Tin tức-Sự kiện</span></i></a></li>
+                <li><a href="#"><i class="fa fa-angle-right"><span> Học Tập</span> </i></a></li>
+                <li><a href="#"><i class="fa fa-angle-right"><span> Liên hệ</span> </i></a></li>
+            </ul>
+        </div>
+
+        <div class="foot3">
+            <h2>FANPAGE TRƯỜNG</h2>
+            <div>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25C4%2590o%25C3%25A0n-tr%25C6%25B0%25E1%25BB%259Dng-THPT-D%25C6%25B0%25C6%25A1ng-B%25E1%25BA%25A1ch-Mai-%25C4%2590%25E1%25BA%25A5t-%25C4%2590%25E1%25BB%258F-250727749113002&tabs=time&width=200&height=80&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="250px" height="100px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="foot4">
+        <ul class="menu2">
+            <li>Thiết kế bởi &copy; VNPT Bà Rịa - Vũng Tàu</li>
+            <li><i class="fa fa-signal"> Số lượt xem: 99</i></li>
+            <li><i class="fa fa-globe"> Theo dõi: 120</i></li>
+        </ul>
+    </div>
+    
 </footer>
 </body>
 </html>
 
-
-<!--Email: thptduongbachmai@gmail.com
-Website: thpt-duongbachmai.bariavungtau.edu.vn
-Thiết kế bởi VNPT Bà Rịa - Vũng Tàu | Quản trị-->
