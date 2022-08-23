@@ -254,7 +254,7 @@ div.News>a:hover{
 }
 
 div.new{
-    width:70px;
+    width:60px;
     height:40px;
     position: absolute;
     color:red;
@@ -263,9 +263,10 @@ div.new{
     background-color: yellow;
     animation: new 2s infinite;
     top:0;
-    right:300px;
+    right:280px;
     padding:5px;
     border-radius: 50%;
+    text-align: center;
 }
 
 @keyframes new{
